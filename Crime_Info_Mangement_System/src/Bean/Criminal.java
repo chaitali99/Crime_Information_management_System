@@ -4,22 +4,22 @@ public class Criminal {
 	private String name;
 	private int age;
 	private String gender;
+	private String address;
 	private String mark;
 	private int policeStationFirstArrested;
-	Address address;
 	
 	public Criminal() {
 		// TODO Auto-generated constructor stub
 	}
-
-	public Criminal(String name, int age, String gender, String mark, int policeStationFirstArrested, Address address) {
+	
+	public Criminal(String name, int age, String gender, String address, String mark, int policeStationFirstArrested) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
+		this.address = address;
 		this.mark = mark;
 		this.policeStationFirstArrested = policeStationFirstArrested;
-		this.address = address;
 	}
 
 	public String getName() {
@@ -46,6 +46,14 @@ public class Criminal {
 		this.gender = gender;
 	}
 
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
 	public String getMark() {
 		return mark;
 	}
@@ -62,18 +70,10 @@ public class Criminal {
 		this.policeStationFirstArrested = policeStationFirstArrested;
 	}
 
-	public Address getAddress() {
-		return address;
-	}
-
-	public void setAddress(Address address) {
-		this.address = address;
-	}
-
 	@Override
 	public String toString() {
-		return "Criminal [name=" + name + ", age=" + age + ", gender=" + gender + ", mark=" + mark
-				+ ", policeStationFirstArrested=" + policeStationFirstArrested + ", address=" + address + "]";
+		return "Criminal [name=" + name + ", age=" + age + ", gender=" + gender + ", address=" + address + ", mark="
+				+ mark + ", policeStationFirstArrested=" + policeStationFirstArrested + "]";
 	}
 	
 	

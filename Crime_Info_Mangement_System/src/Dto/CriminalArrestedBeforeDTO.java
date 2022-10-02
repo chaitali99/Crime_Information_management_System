@@ -27,5 +27,7 @@ public class CriminalArrestedBeforeDTO {
 		return "CriminalArrestedBeforeDTO [name=" + name + ", age=" + age + ", gender=" + gender + ", address="
 				+ address + ", mark=" + mark + ", psname=" + psname + "]";
 	}
+	
+	
 
 }

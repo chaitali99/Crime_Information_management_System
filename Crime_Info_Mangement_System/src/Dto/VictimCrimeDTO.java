@@ -1,30 +1,75 @@
 package Dto;
 
-import Bean.Address;
 
 public class VictimCrimeDTO {
 	
 	private String name;
 	private int age;
 	private String gender;
+	private String address;
 	private String description;
-	Address address;
+	
 	public VictimCrimeDTO() {
-		super();
+		// TODO Auto-generated constructor stub
 	}
-	public VictimCrimeDTO(String name, int age, String gender, String description, Address address) {
+
+	public VictimCrimeDTO(String name, int age, String gender, String address, String description) {
 		super();
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
+		this.address = address;
 		this.description = description;
+	}
+
+	
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
 		this.address = address;
 	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
 	@Override
 	public String toString() {
-		return "VictimCrimeDTO [name=" + name + ", age=" + age + ", gender=" + gender + ", description=" + description
-				+ ", address=" + address + "]";
+		return "VictimsOfCrimeDTO [name=" + name + ", age=" + age + ", gender=" + gender + ", address=" + address
+				+ ", description=" + description + "]";
 	}
+	
 
 	
 	
